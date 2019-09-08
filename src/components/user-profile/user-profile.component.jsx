@@ -79,7 +79,6 @@ class UserProfile extends React.Component {
 
     handleSelect = event => {
         this.setState({gender: event.value});
-        alert(event.value);
     };
 
 
