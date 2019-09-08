@@ -63,6 +63,16 @@ const Header = ({currentUser}) => (
             }
         </div>
 
+        <div >
+            {
+                currentUser ?
+
+                    <label className='display' > שלום,  {currentUser.displayName} </label>
+                    :
+                    null
+            }
+        </div>
+
     </div>
     <Link className='logo-container' to="/">
         <Logo className='logo'/>
