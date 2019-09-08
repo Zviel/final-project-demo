@@ -1,0 +1,66 @@
+$main-color: #323232;
+$sub-color : grey;
+$label-color: #28bedc;
+$background-color: #f0f0f0;
+/*
+reusable piece of css
+ */
+@mixin moveLabel {
+  top: -20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $label-color;
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+
+
+  .form-text-area {
+    background: none;
+    background-color: $background-color;
+    color: $sub-color;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin: 25px 0;
+    height: 150px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .form-input-label {
+      @include moveLabel();
+    }
+  }
+
+  input[type='password'] {
+    letter-spacing: 0.3em;
+  }
+
+  .form-text-area-label {
+    color: $sub-color;
+    background: none;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    right:5px;
+    transition: 300ms ease all;
+
+    &.move {
+      @include moveLabel();
+    }
+
+  }
+
+}
+
+

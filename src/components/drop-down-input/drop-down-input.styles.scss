@@ -1,0 +1,50 @@
+$main-color: #323232;
+$sub-color : grey;
+$label-color: #28bedc;
+$background-color: #f0f0f0;
+
+.group {
+  position: relative;
+  margin: 45px 0;
+
+
+  .form-input {
+    background: none;
+    background-color: $background-color;
+    color: $sub-color;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin: 25px 0;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  input[type='password'] {
+    letter-spacing: 0.3em;
+  }
+
+  .form-input-label-profile {
+    background: none;
+    position: absolute;
+    pointer-events: none;
+    right:5px;
+    top: -25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $label-color;
+
+  }
+
+  .drop-down {
+
+  }
+
+}

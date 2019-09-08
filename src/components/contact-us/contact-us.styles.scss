@@ -1,0 +1,16 @@
+.contact-us {
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+
+
+  .title {
+    margin : 10px 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

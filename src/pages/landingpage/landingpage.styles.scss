@@ -1,0 +1,19 @@
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  background-image: url(1.png);
+  background-size: 60%;
+  background-position: center;
+  background-color: hsla(0,0%,100%,0.75);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+
+

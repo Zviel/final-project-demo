@@ -1,0 +1,41 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #f0f0f0;
+
+}
+a{
+    color: #28bedc;
+    text-decoration: none;
+}
+
+.headerStyle {
+    background-color: #191d23;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+a:hover {
+    font-weight: bold;
+}
+
+.bodyContainer {
+    z-index: -100;
+}
+
+.footerStyle {
+    background-color: #171d23;
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    padding-bottom: 0;
+    height : 60px;
+}
+/*
+* {
+    box-sizing: border-box;
+}
+*/
