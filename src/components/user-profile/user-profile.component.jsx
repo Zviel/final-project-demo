@@ -85,7 +85,7 @@ class UserProfile extends React.Component {
 
     render () {
         const {firstName,lastName,birthDate,gender}=this.state;
-        const genderOptions = ["נקבה","גבר","אחר"];
+        const genderOptions = ["נקבה","זכר","אחר"];
         const defaultOption = genderOptions[0];
         return (
             <div className="input-field">

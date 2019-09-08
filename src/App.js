@@ -11,6 +11,7 @@ import QueuePartA from './components/queue-part-a/queue-part-a.component';
 import QueuePartB from './components/queue-part-b/queue-part-b.component';
 import Header from './components/header/header.component';
 import ContactUsPage from './pages/contact-us/contact-us.component';
+import AboutUs from './components/about-us/abous-us.component'
 import Footer from './components/footer/footer.component';
 import LandingPage from './pages/landingpage/landingpage.component';
 import SignInPage from './pages/sign-in/sign-in.component';
@@ -70,8 +71,9 @@ class App extends React.Component {
                 <div className='bodyContainer'>
                     <Switch>
                         <Route exact path='/' component={LandingPage}/>
+                        <Route exact path={'/about-us'} component={AboutUs} />
                         <Route exact path='/contact-us' component={ContactUsPage}/>
-                        <Route exact path='/homepage' render={()=>
+                        /* <Route exact path='/homepage' render={()=>
                             this.props.currentUser ? <HomePage/>:(<Redirect to='/'/>)}/>
                         {/* <Route exact path='/homepage' component={HomePage}/>*/}
                         <Route exact path='/user-profile' render={()=>

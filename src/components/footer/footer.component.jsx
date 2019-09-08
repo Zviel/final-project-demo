@@ -9,15 +9,17 @@ const Footer = () => (
             <Link className='option' to="/contact-us">
                 צור קשר
             </Link>
-            <Link className='option' to="/java">
+            <Link className='option' to="/about-us">
                 עלינו
             </Link>
 
         </div>
         <Link className='companyName' to="/">
-           כל הזכויות שמורות לצוות eCademy
+            כל הזכויות שמורות לצוות eCademy
         </Link>
     </div>
 );
 
 export default Footer
+
+
